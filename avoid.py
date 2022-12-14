@@ -12,7 +12,7 @@ from pygame.locals import(
     QUIT
 )
 
-SCREEN_WIDTH = 800
+SCREEN_WIDTH = 1200
 SCREEN_HEIGHT = 800
 
 class Player(pygame.sprite.Sprite):
