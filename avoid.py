@@ -15,6 +15,10 @@ from pygame.locals import(
 SCREEN_WIDTH = 1200
 SCREEN_HEIGHT = 800
 
+
+
+hiscore = 0
+
 class Player(pygame.sprite.Sprite):
     def __init__(self):
         super(Player, self).__init__()
@@ -100,6 +104,7 @@ clock = pygame.time.Clock()
 running = True
 
 while running:
+    hiscore +=1 
     for event in pygame.event.get():
         if event.type == KEYDOWN:
             if event.key == K_ESCAPE:
@@ -138,3 +143,5 @@ while running:
     pygame.display.flip()
 
     clock.tick(60)
+
+print("hiscore", hiscore)
